@@ -1,0 +1,146 @@
+Este artículo inicia el módulo con una buena visión de qué es la accesibilidad: esta descripción general incluye qué grupos de personas necesitamos considerar y por qué, qué herramientas usan diferentes personas para interactuar con la web y cómo podemos hacer que la accesibilidad sea parte de nuestra web flujo de trabajo de desarrollo.
+Prerrequisitos: alfabetización informática básica, una comprensión básica de HTML y CSS.
+Objetivo: para familiarizarse con la accesibilidad, incluida lo que es y cómo lo afecta como desarrollador web.
+Entonces, ¿qué es la accesibilidad?
+
+La accesibilidad es la práctica de hacer que sus sitios web sean utilizables por la mayor cantidad de personas posible. Tradicionalmente, pensamos que esto es sobre personas con discapacidades, pero la práctica de hacer que los sitios sean accesibles también beneficien a otros grupos, como los que usan dispositivos móviles, o aquellos con conexiones de red lentas.
+
+También puede pensar que la accesibilidad es tratar a todos de la misma manera y darles la misma oportunidad, sin importar su capacidad o circunstancias. Así como está mal excluir a alguien de un edificio físico porque está en una silla de ruedas (los edificios públicos modernos generalmente tienen rampas para sillas de ruedas o ascensores), tampoco es correcto excluir a alguien de un sitio web porque tienen una discapacidad visual. Todos somos diferentes, pero todos somos humanos y, por lo tanto, tenemos los mismos derechos humanos.
+
+La accesibilidad es lo correcto. Proporcionar sitios accesibles es parte de la ley en algunos países, lo que puede abrir algunos mercados significativos que de otro modo no podrían usar sus servicios o comprar sus productos.
+
+La construcción de sitios accesibles beneficia a todos:
+
+    Semantic HTML, que mejora la accesibilidad, también mejora el SEO, lo que hace que su sitio se pueda encontrar más.
+    El cuidado de la accesibilidad demuestra una buena ética y moral, lo que mejora su imagen pública.
+    Otras buenas prácticas que mejoran la accesibilidad también hacen que su sitio sea más utilizable por otros grupos, como usuarios de teléfonos móviles o aquellos con baja velocidad de red. De hecho, todos pueden beneficiarse de muchas de esas mejoras.
+    ¿Mencionamos que también es la ley en algunos lugares?
+
+¿Qué tipo de discapacidad estamos viendo?
+
+Las personas con discapacidades son tan diversas como las personas sin discapacidades, y también sus discapacidades. La lección clave aquí es pensar más allá de su propia computadora y cómo usa la web, y comenzar a aprender sobre cómo otros lo usan: usted no son sus usuarios. Los principales tipos de discapacidad a considerar se explican a continuación, junto con cualquier herramienta especial que usen para acceder al contenido web (conocido como tecnologías de asistencia o ATS).
+
+Nota: La hoja de información sobre discapacidad y salud de la Organización Mundial de la Salud establece que "más de mil millones de personas, alrededor del 15% de la población mundial, tienen alguna forma de discapacidad" y "entre 110 millones y 190 millones de adultos tienen dificultades significativas en el funcionamiento".
+Personas con discapacidad visual
+
+Las personas con discapacidades visuales incluyen personas con ceguera, visión de bajo nivel y ceguera en color. Muchas personas con discapacidades visuales usan lupas de pantalla que son lupa física o capacidades de zoom de software. La mayoría de los navegadores y sistemas operativos en estos días tienen capacidades de zoom. Algunos usuarios confiarán en los lectores de pantalla, que es un software que lee el texto digital en voz alta. Algunos ejemplos de lector de pantalla incluyen:
+
+    Productos comerciales pagados, como Jaws (Windows) y Dolphin Screen Reader (Windows).
+    Productos gratuitos, como NVDA (Windows), Chromevox (Chrome) y Orca (Linux).
+    Software integrado en el sistema operativo, como VoiceOver (MacOS, iPados, iOS), Narrator (Windows), Chromevox (en Chrome OS) y Talkback (Android).
+
+Es una buena idea familiarizarse con los lectores de pantalla; También debe configurar un lector de pantalla y jugar con él, para tener una idea de cómo funciona. Consulte nuestra Guía de lectores de pantalla de prueba de navegador para obtener más detalles sobre el uso de ellos. El siguiente video también proporciona un breve ejemplo de cómo es la experiencia.
+
+En términos de estadísticas, la Organización Mundial de la Salud estima que "se estima que 285 millones de personas tienen discapacidad visual en todo el mundo: 39 millones son ciegos y 246 millones tienen baja visión". (Ver discapacidad visual y ceguera). Esa es una población grande y significativa de usuarios que simplemente se pierden porque su sitio no está codificado correctamente, casi del mismo tamaño que la población de los Estados Unidos de América.
+Personas con discapacidad auditiva
+
+Las personas sordas y con problemas de audición (DHH) tienen varios niveles de pérdida auditiva que van desde leve hasta profunda. Aunque algunos se usan en (ver dispositivos de asistencia para personas con audiencia, voz, habla o trastornos del lenguaje), no están muy extendidos.
+
+Para proporcionar acceso, se deben proporcionar alternativas textuales. Los videos deben subtitularse manualmente y las transcripciones deben proporcionarse para el contenido de audio. Además, debido a los altos niveles de privación del lenguaje en las poblaciones de DHH, se debe considerar la simplificación del texto.
+
+Las personas sordas y con problemas de audición también representan una importante base de usuarios: "466 millones de personas en todo el mundo tienen pérdida auditiva incapacitante",dice la hoja informativa de sordera y pérdida de audición de la Organización Mundial de la Salud.
+Personas con impedimentos de movilidad
+
+Estas personas tienen discapacidades con respecto al movimiento, lo que podría implicar problemas puramente físicos (como la pérdida de extremidades o parálisis), o trastornos neurológicos/genéticos que conducen a la debilidad o la pérdida de control en las extremidades. Algunas personas pueden tener dificultades para hacer los movimientos exactos de la mano necesarios para usar un mouse, mientras que otras podrían verse más severamente afectadas, tal vez estar significativamente paralizado hasta el punto en que necesitan usar un puntero de cabeza para interactuar con las computadoras.
+
+Este tipo de discapacidad también puede ser el resultado de la vejez, en lugar de cualquier trauma o condición específico, y también podría ser el resultado de las limitaciones de hardware: algunos usuarios pueden no tener un mouse.
+
+La forma en que esto generalmente afecta el trabajo de desarrollo web es el requisito de que los controles sean accesibles por el teclado: discutiremos la accesibilidad del teclado en artículos posteriores en el módulo, pero es una buena idea probar algunos sitios web usando solo el teclado para ver cómo te subes. ¿Puede usar la tecla Tab para moverse entre los diferentes controles de un formulario web, por ejemplo? Puede encontrar más detalles sobre los controles de teclado en nuestra prueba de navegador cruzado utilizando la sección de accesibilidad de teclado nativo.
+
+En términos de estadísticas, un número significativo de personas tienen impedimentos de movilidad. Los Centros de Control de Enfermedades de EE. UU. Y la discapacidad de prevención y el funcionamiento (adultos no institucionalizados de 18 años y más) informa el porcentaje de EE. UU. "Porcentaje de adultos con cualquier dificultad de funcionamiento físico: 16.1%".
+Personas con discapacidad cognitiva
+
+El deterioro cognitivo se refiere a una amplia gama de discapacidades, desde personas con discapacidades intelectuales que tienen las capacidades más limitadas, hasta todos nosotros a medida que envejecemos y tenemos dificultades para pensar y recordar. El rango incluye personas con enfermedades mentales, como depresión y esquizofrenia. También incluye personas con discapacidades de aprendizaje, como dislexia y trastorno por déficit de atención hiperactividad. Es importante destacar que hay mucha diversidad dentro de las definiciones clínicas de discapacidades cognitivas, las personas con ellas experimentan un conjunto común de problemas funcionales. Estos incluyen dificultad para comprender el contenido, recordar cómo completar las tareas y la confusión causada por diseños inconsistentes de la página web.
+
+Una buena base de accesibilidad para personas con discapacidad cognitiva incluye:
+
+    Entregar contenido de más de una forma, como por texto a voz o por video.
+    Contenido fácil de entender, como el texto escrito con estándares de lenguaje sencillo.
+    Centrar la atención en contenido importante.
+    Minimizar las distracciones, como contenido innecesario o anuncios.
+    Diseño de página web constante y navegación.
+    Elementos familiares, como enlaces subrayados azules cuando no se visitan y no se visitan cuando se visitan.
+    Dividir procesos en pasos lógicos y esenciales con indicadores de progreso.
+    Autenticación del sitio web lo más fácil posible sin comprometer la seguridad.
+    Hacer los formularios fáciles de completar, como con mensajes de error claros y recuperación simple de errores.
+
+Notas
+
+    El diseño con accesibilidad cognitiva conducirá a buenas prácticas de diseño. Ellos beneficiarán a todos.
+    Muchas personas con discapacidades cognitivas también tienen discapacidades físicas. Los sitios web deben cumplir con las pautas de accesibilidad de contenido web del W3C, incluidas las pautas de accesibilidad cognitiva.
+    El grupo de trabajo de accesibilidad cognitivo y de aprendizaje de Discapacidades del W3C produce pautas de accesibilidad web para personas con discapacidades cognitivas.
+    WebAim tiene una página cognitiva de información y recursos relevantes.
+    Los Centros de Control de Enfermedades de los Estados Unidos estiman que, a partir de 2018, 1 de cada 4 ciudadanos estadounidenses tienen una discapacidad y, de ellos, el deterioro cognitivo es el más común para los jóvenes.
+    En los EE. UU., Históricamente, algunas discapacidades intelectuales se han denominado "retraso mental". Muchos ahora consideran este término despectivo, por lo que se debe evitar su uso.
+    En el Reino Unido, algunas discapacidades intelectuales se denominan "discapacidades de aprendizaje" o "dificultades de aprendizaje".
+
+Implementación de accesibilidad en su proyecto
+
+Un mito de accesibilidad común es que la accesibilidad es un costoso "adicional adicional" para implementar en un proyecto. Este mito en realidad puede ser cierto si es:
+
+    Está tratando de "modernizar" la accesibilidad en un sitio web existente que tiene problemas de accesibilidad significativos.
+    Solo ha comenzado a considerar la accesibilidad y descubrir problemas relacionados en las últimas etapas de un proyecto.
+
+Sin embargo, si considera la accesibilidad desde el inicio de un proyecto, el costo de hacer que la mayoría de los contenidos sean accesibles deben ser bastante mínimos.
+
+Al planificar su proyecto, tenga en cuenta las pruebas de accesibilidad en su régimen de pruebas, al igual que las pruebas para cualquier otro segmento de público objetivo importante (por ejemplo, escritorio objetivo o navegadores móviles). Pruebe temprano y, a menudo, ejecutar pruebas automatizadas idealmente para captar las características faltantes detectables programáticamente (como la imagen faltante de AlTexto ternativo o texto de enlace malo: vea las relaciones y el contexto de los elementos) y hacer algunas pruebas con grupos de usuarios discapacitados para ver qué tan bien funcionan las características del sitio más complejas para ellos. Por ejemplo:
+
+    ¿Mi widget de selección de fechas es utilizable por personas que usan lectores de pantalla?
+    Si el contenido se actualiza dinámicamente, ¿las personas con discapacidad visual lo saben?
+    ¿Están accesibles mis botones de interfaz de usuario usando el teclado y las interfaces en tacto?
+
+Puede y debe mantener una nota de posibles áreas problemáticas en su contenido que necesitará trabajo para que sea accesible, asegúrese de que se pruebe a fondo y piense en soluciones/alternativas. El contenido de texto (como verá en el próximo artículo) es fácil, pero ¿qué pasa con su contenido multimedia y sus gráficos 3D Whizzy? Debe observar el presupuesto de su proyecto y pensar en qué soluciones tiene disponibles para que dicho contenido sea accesible. Tener todo su contenido multimedia transcrito es una opción que, aunque costosa, es posible.
+
+Además, sea realista. "100% accesibilidad" es un ideal inobtible, siempre se encontrará con algún tipo de caso de borde que resulte en cierto usuario que encuentre cierto contenido difícil de usar, pero debe hacer todo lo que pueda. Si planea incluir un gráfico Whizzy 3D Pide Gráfico hecho con WebGL, es posible que desee incluir una tabla de datos como una representación alternativa accesible de los datos. O es posible que desee incluir la mesa y deshacerse de la tabla de pastel 3D: la tabla es accesible por todos, más rápido a codificar, menos intensivo en CPU y más fácil de mantener.
+
+Por otro lado, si está trabajando en un sitio web de la galería que muestra un interesante arte en 3D, no sería razonable esperar que cada obra de arte sea perfectamente accesible para personas con discapacidad visual, dado que es un medio completamente visual.
+
+Para demostrar que le importa y pensó en la accesibilidad, publique una declaración de accesibilidad en su sitio que detalla cuál es su política hacia la accesibilidad y los pasos que ha tomado para que el sitio sea accesible. Si alguien le notifica que su sitio tiene un problema de accesibilidad, inicie un diálogo con ellos, sea empático y tome medidas razonables para tratar de solucionar el problema.
+
+Nota: Nuestro manejo de problemas de accesibilidad comunes El artículo cubre los detalles de accesibilidad que deben probarse con más detalle.
+
+Para resumir:
+
+    Considere la accesibilidad desde el inicio de un proyecto y pruebe temprano y con frecuencia. Al igual que cualquier otro error, un problema de accesibilidad se vuelve más costoso de solucionar a medida que se descubre más tarde.
+    Tenga en cuenta que muchas mejores prácticas de accesibilidad benefician a todos, no solo a los usuarios con discapacidades. Por ejemplo, Lean Semantic Markup no solo es bueno para los lectores de pantalla, sino que también es rápido cargar y rendir. Esto beneficia a todos, especialmente a aquellos en dispositivos móviles y/o conexiones lentas.
+    Publique una declaración de accesibilidad en su sitio e interactúe con las personas que tienen problemas.
+
+Pautas de accesibilidad y la ley
+
+Existen numerosas listas de verificación y conjuntos de pautas disponibles para basar las pruebas de accesibilidad, lo que puede parecer abrumador a primera vista. Nuestro consejo es familiarizarse con las áreas básicas en las que necesita cuidar, así como comprender las estructuras de alto nivel de las pautas que son más relevantes para usted.
+
+    Para empezar, el W3C ha publicado un documento grande y muy detallado que incluye criterios muy precisos y agnósticos de tecnología para la conformidad de accesibilidad. Estos se denominan pautas de accesibilidad al contenido web (WCAG), y no son una lectura corta de ninguna manera. Los criterios se dividen en cuatro categorías principales, que especifican cómo las implementaciones pueden ser perceptibles, operables, comprensibles y robustas. El mejor lugar para obtener una introducción ligera y comenzar a aprender es WCAG de un vistazo. No hay necesidad de aprender todos los criterios de WCAG: tenga en cuenta las principales áreas de preocupación y use una variedad de técnicas y herramientas para resaltar las áreas que no se ajusten a los criterios de WCAG (ver más abajo para más).
+    Su país también puede tener una legislación específica que rige la necesidad de sitios web que sirvan a su población para que sea accesible, por ejemplo, EN 301 549 en la UE, la Sección 508 de la Ley de Rehabilitación en los Estados Unidos, Ordenanza Federal sobre Tecnología de la Información sin barreras en Alemania, la Regulaciones de accesibilidad 2018 en el Reino Unido, Accessibilità en Italia, la Ley de Discriminación de Discapacidades en Australia, etc. El W3C mantiene una lista de leyes y políticas de accesibilidad web por país.
+
+Entonces, si bien el WCAG es un conjunto de pautas, su país probablemente tendrá leyes que rigen la accesibilidad web, o al menos la accesibilidad de los servicios disponibles para el público (que podría incluir sitios web, televisión, espacios físicos, etc.) es una buena idea Para averiguar cuáles son sus leyes. Si no hace ningún esfuerzo para verificar que su contenido sea accesible, podría ser legalmente responsable si las personas se quejan.
+
+Esto suena serio, pero realmente solo necesita considerar la accesibilidad como la principal prioridad de su web dePrácticas de terciopelo, como se describe anteriormente. En caso de duda, obtenga el consejo de un abogado calificado. No vamos a ofrecer más consejos que este, porque no somos abogados.
+API de accesibilidad
+
+Los navegadores web utilizan API de accesibilidad especiales (proporcionadas por el sistema operativo subyacente) que exponen información útil para tecnologías de asistencia (ATS): ATS tiende principalmente a utilizar información semántica, por lo que esta información no incluye cosas como información de estilo, o Javascript. Esta información está estructurada en un árbol de información llamado árbol de accesibilidad.
+
+Diferentes sistemas operativos tienen diferentes API de accesibilidad disponibles:
+
+    Windows: MSAA/IAccessible, UiaExpress, IAccessible2
+    macOS: nsaccesibilidad
+    Linux: AT-SPI
+    Android: marco de accesibilidad
+    iOS: UiacCessibilidad
+
+Cuando la información semántica nativa proporcionada por los elementos HTML en sus aplicaciones web cae hacia abajo, puede complementarla con características de la especificación de Wai-Aria, que agregan información semántica al árbol de accesibilidad para mejorar la accesibilidad. Puedes aprender mucho más sobre Wai-Aria en nuestro artículo básico de Wai-Aria.
+Resumen
+
+Este artículo debería haberle brindado una descripción general de accesibilidad de alto nivel, le ha mostrado por qué es importante y observó cómo puede adaptarse a su flujo de trabajo. Ahora también debe tener la sed de aprender sobre los detalles de implementación que pueden hacer que los sitios sean accesibles, y comenzaremos con eso en la siguiente sección, observando por qué HTML es una buena base para la accesibilidad.
+
+    Descripción general: accesibilidad
+    próximo
+
+En este módulo
+
+    ¿Qué es la accesibilidad?
+    HTML: una buena base para la accesibilidad
+    Las mejores prácticas de accesibilidad CSS y JavaScript
+    Conceptos básicos de Wai-Aria
+    Multimedia accesible
+    Accesibilidad móvil
+    Solución de problemas de accesibilidad

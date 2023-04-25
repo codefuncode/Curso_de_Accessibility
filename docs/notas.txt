@@ -1,0 +1,50 @@
+Accesibilidad
+
+Aprender algunos HTML, CSS y JavaScript es útil si desea convertirse en desarrollador web. Más allá del uso mecánico, es importante aprender a usar estas tecnologías de manera responsable para que todos los lectores puedan usar sus creaciones en la web. Para ayudarlo a lograr esto, este módulo cubrirá las mejores prácticas generales (que se demuestran en los temas HTML, CSS y JavaScript), pruebas de navegador cruzado y algunos consejos para hacer cumplir la accesibilidad desde el principio. Cubriremos la accesibilidad con detalle especial.
+Visión general
+
+Cuando alguien describe un sitio como "accesible", significa que cualquier usuario puede usar todas sus características y contenido, independientemente de cómo el usuario acceda a la web, incluso y especialmente a los usuarios con discapacidades físicas o mentales.
+
+    Los sitios deben ser accesibles para usuarios de teclado, mouse y pantalla táctil, y cualquier otra forma en que los usuarios accedan a la web, incluidos lectores de pantalla y asistentes de voz como Alexa y Google Home.
+    Las aplicaciones deben ser comprensibles y utilizables por personas, independientemente de las habilidades auditivas, visuales, físicas o cognitivas.
+    Los sitios tampoco deben causar daño: las características web como el movimiento pueden causar migrañas o convulsiones epilépticas.
+
+Por defecto, se puede acceder a HTML, si se usa correctamente. La accesibilidad web implica garantizar que el contenido siga siendo accesible, independientemente de quién y cómo se acceda a la Web.
+
+El Inspector de Accesibilidad Firefox es una herramienta muy útil para verificar los problemas de accesibilidad en las páginas web. El siguiente video le proporciona una buena introducción:
+¿Busca convertirse en un desarrollador web front-end?
+
+Hemos reunido un curso que incluye toda la información esencial que necesita para trabajar para su objetivo.
+
+Empezar
+Requisitos previos
+
+Para aprovechar al máximo este módulo, sería una buena idea trabajar al menos los dos primeros módulos de los temas HTML, CSS y JavaScript, o tal vez incluso mejor, trabajar a través de las partes relevantes del módulo de accesibilidad como Trabajas a través de los temas de tecnología relacionados.
+
+Nota: Si está trabajando en una computadora/tableta/otros dispositivos donde no tiene la capacidad de crear sus propios archivos, puede probar la mayoría de los ejemplos de código en un programa de codificación en línea como JSBin o Glitch.
+Guías
+
+¿Qué es la accesibilidad?
+
+    Este artículo comienza el módulo con una buena mirada de qué es la accesibilidad: esto incluye qué grupos de personas debemos considerar y por qué, qué herramientas usan diferentes personas para interactuar con la web y cómo podemos hacer que la accesibilidad sea parte de nuestro desarrollo web flujo de trabajo.
+HTML: una buena base para la accesibilidad
+
+    Se puede accesible una gran cantidad de contenido web simplemente asegurándose de que los elementos HTML correctos siempre se usen para el propósito correcto. Este artículo considera en detalle cómo se puede utilizar HTML para garantizar la máxima accesibilidad.
+Las mejores prácticas de accesibilidad CSS y JavaScript
+
+    CSS y JavaScript, cuando se usan correctamente, también tienen el potencial de permitir experiencias web accesibles, pero si se usan mal pueden dañar significativamente la accesibilidad. Este artículo describe algunas mejores prácticas CSS y JavaScript que deben considerarse para garantizar que incluso el contenido complejo sea lo más accesible posible.
+Conceptos básicos de Wai-Aria
+
+    Siguiendo el artículo anterior, a veces hacer controles complejos de UI que implican HTML poco semántico y contenido dinámico actualizado de JavaScript pueden ser difíciles. Wai-Aria es una tecnología que puede ayudar con tales problemas al agregar más semánticas que los navegadores y las tecnologías de asistencia pueden reconocer y usar para que los usuarios sepan lo que está sucediendo. Aquí mostraremos cómo usarlo en un nivel básico para mejorar la accesibilidad.
+Multimedia accesible
+
+    Otra categoría de contenido que puede crear problemas de accesibilidad es la multimedia: el contenido de video, audio y imagen debe recibir alternativas textuales adecuadas, para que puedan ser entendidas por tecnologías de asistencia y sus usuarios. Este artículo muestra cómo.
+Accesibilidad móvil
+
+    Dado que el acceso web en dispositivos móviles es tan popular, y las plataformas populares como iOS y Android tienen herramientas de accesibilidad completas, es importante considerar la accesibilidad de su contenido web en estas plataformas. Este artículo analiza las consideraciones de accesibilidad específicas para dispositivos móviles.
+
+Evaluaciones
+
+Solución de problemas de accesibilidad
+
+    En la evaluación de este módulo, le presentamos un sitio simple con varios problemas de accesibilidad que necesita diagnosticar y solucionar.
